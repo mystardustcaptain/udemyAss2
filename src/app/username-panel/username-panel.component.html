@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <input type="text" class="form-control" [(ngModel)]='username'>
+  </div>
+  <div class="row">
+    <p>Username: {{ username }}</p>
+  </div>
+  <div class="row">
+    <button class='btn btn-primary' [disabled]='!canReset()' (click)='onClickReset()'>Reset</button>
+  </div>
+</div>
